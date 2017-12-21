@@ -6,6 +6,14 @@
   font-family: 'Quicksand';
 
  }
+.topnav .menu-tel a{
+	    margin-top: 3px;
+		color: white;
+		font-size: 14px;
+		float: right;
+		padding-right: 2px;
+	
+}
 .topnav {
     background-color: #131919;
     overflow: hidden;
@@ -69,7 +77,7 @@ img.flag {
 
 .english-button {
   display: inline-block;
-  border: 2px solid Lime;
+  border: 1px solid Lime;
 
 
 }
@@ -116,11 +124,16 @@ img.flag {
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 910px) {
 	
-av.responsive {position: relative;}
+	.topnav.responsive .menu-tel a{
+		margin-top: 1px;
+		float: right;	
+		padding-right: 0px;
+}
+	
   .topnav.responsive  a.icon {
     position: absolute;
     right: 0px;
-    top: 0px;
+    top: 2px;
 	padding: 0px;
 	border: 2px solid blue;
   }
@@ -167,8 +180,8 @@ img.logo {
   }
   .topnav.responsive .menu-part2 {
     position: absolute;
-    right: 0px;
-    top: 0px;
+    right: 10px;
+    top: 37px;
 	border: 2px solid blue;
   }
 
@@ -178,8 +191,9 @@ img.logo {
   }
 
   .topnav.responsive .deutsch-button {
-    margin-right: 22px;
+    margin-right: 32px;
   }
+  
 
   img.flag {
    display: inline-block;
